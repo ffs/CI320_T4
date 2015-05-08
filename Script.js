@@ -1,6 +1,6 @@
-var alunos = new Object();			//cria a estrutura que conterá os registros dos alunos nas disciplinas
-	alunos.tam = 0;					//inicializa numero de registros
-	alunos.a = new Array();			//cria a lista para os registros
+var registros = new Object();			//cria a estrutura que conterá os registros dos alunos nas disciplinas
+	registros.tam = 0;					//inicializa numero de registros
+	registros.aluno = new Array();		//cria a lista para os registros
 
 var auxiliar = ["GRR00000000", "GRR00000001", "GRR00000002", "GRR00000003", "GRR00000004", "GRR00000005", "GRR00000006", "GRR00000007", "GRR00000008", "GRR00000009", "GRR00000010", "GRR00000011", "GRR00000012"];
 
@@ -15,14 +15,10 @@ var counter = 0;
 
 function inicializa() {
 	var registros = criaRegistros();
-	criaAlunos(registros);
 }
 
 function criaRegistros() {
 	var registro;
-	var registros = new Object();			//cria a estrutura que conterá os registros dos alunos nas disciplinas
-		registros.tam = 0;					//inicializa numero de registros
-		registros.aluno = new Array();		//cria a lista para os registros	
 	$.getJSON("Alunos.json", function(data) {
 		counter;	
 		while(counter < numRegs){
@@ -48,7 +44,7 @@ function insereElemento(vetor, elemento) {
 	return vetor;
 }
 
-function criaAlunos(registros) {
+function criaAlunos(alunos, registros) {
 	var discs = new Array;
 	var disciplina;
 	var aluno;
@@ -75,8 +71,9 @@ function criaAlunos(registros) {
 			}
 			c++;
 		}
-		insereAluno(aluno);
+		alunos = insereAluno(alunos, aluno);
 	}
+	return alunos;
 }
 
 //retorna 0 se a disciplina ja foi criada pelo menos uma vez
@@ -173,14 +170,15 @@ function insereHistorico(alunoHist, disciplina) {
 	return alunoHist;
 }
 
-function insereAluno(aluno) {
+function insereAluno(alunos, aluno) {
 	var lastPosition = alunos.tam;
 	alunos.a[lastPosition] = new Object;
 	alunos.a[lastPosition] = aluno;
 	alunos.tam++;
+	return alunos;
 }
 
-function procuraAluno(grr) {
+function procuraAluno(alunos, grr) {
 	var counter = 0;
 	while(counter < alunos.tam) {
 		if (alunos.a[counter].MATR_ALUNO == grr) {
@@ -319,11 +317,15 @@ function desenhaGrade(aluno) {
 }
 
 function atualizaDados() {
+	var alunos = new Object();			//cria a estrutura que conterá os registros dos alunos nas disciplinas
+		alunos.tam = 0;					//inicializa numero de registros
+		alunos.a = new Array();			//cria a lista para os registros
+	alunos = criaAlunos(alunos, registros);
 	var aluno;
 	var grr = document.getElementById("grr").value;
 	var nomeAluno = document.getElementById("nomeAluno");
 	var raAluno = document.getElementById("grrAluno");
-	aluno = procuraAluno(grr);
+	aluno = procuraAluno(alunos, grr);
 	nomeAluno.innerHTML=aluno.NOME_ALUNO;
 	raAluno.innerHTML=aluno.MATR_ALUNO;
 	desenhaGrade(aluno);										//limpa grade curricular
