@@ -6,6 +6,9 @@
 		<script type="text/javascript" src="Script.js"> </script>
 		<link rel="stylesheet" href="messi.min.css" />
 		<script src="messi.js"></script>
+		<script>
+			document.oncontextmenu=new Function ("return false") ;
+		</script>
 	</head>
 	<body onload="inicializa()">
 		<header> 
@@ -26,10 +29,32 @@
 		</article>
 		<footer>
 			<h1> Informações do Aluno </h1>
-			Nome: 
-			<p id="nomeAluno">Nenhum GRR selecionado!</p>
-			Registro Acadêmico:
-			<p id="grrAluno">Nenhum GRR selecionado!</p>
+			<table>
+				<tr>
+					<td>
+						<b>Nome:</b> 
+					</td>
+					<td id="nomeAluno">
+						Nenhum GRR selecionado!
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Registro Acadêmico:</b> 
+					</td>
+					<td id="grrAluno">
+						Nenhum GRR selecionado!
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Curso:</b>
+					</td>
+					<td id="cAlu">
+						Nenhum GRR selecionado!
+					</td>
+				</tr>
+			</table>
 		</footer>
 	</body>
 </html>

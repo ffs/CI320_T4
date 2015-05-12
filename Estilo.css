@@ -60,6 +60,12 @@ td {
 
 }
 
+.DivWithScroll {
+    height:500px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
 .table_grade {
 	border:1px solid gray;
 	border-collapse:collapse;

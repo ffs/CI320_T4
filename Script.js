@@ -304,11 +304,11 @@ function procuraMaterias(aluno) {
 function desenhaGrade(aluno) {
 	var grade = document.getElementById("grade");
 	if (aluno.NUM_VERSAO == "2011"){
-		$('#grade').html('<table class="table_grade"><tr><td colspan="8" class="titulos_table">Ciência da Computação <br>Períodos semestrais do curso <br>Grade Curricular 2011</td></tr><tr><td class="titulos_table">1º</td><td class="titulos_table">2º</td><td class="titulos_table">3º</td><td class="titulos_table">4º</td><td class="titulos_table">5º</td><td class="titulos_table">6º</td><td class="titulos_table">7º</td><td class="titulos_table">8º</td></tr><tr id="line1"><td id="CI068" onclick="abreDetalhes(event)" class="codigo">CI068</td><td id="CI210" onclick="abreDetalhes(event)" class="codigo">CI210</td><td id="CI212" onclick="abreDetalhes(event)" class="codigo">CI212</td><td id="CI215" onclick="abreDetalhes(event)" class="codigo">CI215</td><td id="CI162" onclick="abreDetalhes(event)" class="codigo">CI162</td><td id="CI163" onclick="abreDetalhes(event)" class="codigo">CI163</td><td id="CI221" onclick="abreDetalhes(event)" class="codigo">CI221</td><td id="OPT1" class="codigo">OPT</td></tr><tr id="line2"><td id="CI055" onclick="abreDetalhes(event)" class="codigo">CI055</td><td id="CI056" onclick="abreDetalhes(event)" class="codigo">CI056</td><td id="CI057" onclick="abreDetalhes(event)" class="codigo">CI057</td><td id="CI062" onclick="abreDetalhes(event)" class="codigo">CI062</td><td id="CI065" onclick="abreDetalhes(event)" class="codigo">CI065</td><td id="CI165" onclick="abreDetalhes(event)" class="codigo">CI165</td><td id="CI211" onclick="abreDetalhes(event)" class="codigo">CI211</td><td id="OPT2" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line3"><td id="CI046" onclick="abreDetalhes(event)" class="codigo">CM046</td><td id="CI067" onclick="abreDetalhes(event)" class="codigo">CI067</td><td id="CI064" onclick="abreDetalhes(event)" class="codigo">CI064</td><td id="CE003" onclick="abreDetalhes(event)" class="codigo">CE003</td><td id="CI059" onclick="abreDetalhes(event)" class="codigo">CI059</td><td id="CI209" onclick="abreDetalhes(event)" class="codigo">CI209</td><td id="OPT3" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT4" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line4"><td id="CI045" onclick="abreDetalhes(event)" class="codigo">CM045</td><td id="CM005" onclick="abreDetalhes(event)" class="codigo">CM005</td><td id="CI237" onclick="abreDetalhes(event)" class="codigo">CI237</td><td id="CI058" onclick="abreDetalhes(event)" class="codigo">CI058</td><td id="CI061" onclick="abreDetalhes(event)" class="codigo">CI061</td><td id="CI218" onclick="abreDetalhes(event)" class="codigo">CI218</td><td id="OPT5" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT6" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line5"><td id="CM201" onclick="abreDetalhes(event)" class="codigo">CM201</td><td id="CM202" onclick="abreDetalhes(event)" class="codigo">CM202</td><td id="CI166" onclick="abreDetalhes(event)" class="codigo">CI166</td><td id="CI164" onclick="abreDetalhes(event)" class="codigo">CI164</td><td id="SA214" onclick="abreDetalhes(event)" class="codigo">SA214</td><td id="CI220" onclick="abreDetalhes(event)" class="codigo">CI220</td><td id="TG1" onclick="abreDetalhes(event)" class="codigo">TG I</td><td id="TG2" onclick="abreDetalhes(event)" class="codigo">TG II</td></tr><tr><td colspan="3" bgcolor="#f5f5f5"><strong> * BLOCO A (Formação básica) </strong></td><colspan="5">&nbsp;</td></tr></table>');
+		$('#grade').html('<table class="table_grade"><tr><td colspan="8" class="titulos_table">Ciência da Computação <br>Períodos semestrais do curso <br>Grade Curricular 2011</td></tr><tr><td class="titulos_table">1º</td><td class="titulos_table">2º</td><td class="titulos_table">3º</td><td class="titulos_table">4º</td><td class="titulos_table">5º</td><td class="titulos_table">6º</td><td class="titulos_table">7º</td><td class="titulos_table">8º</td></tr><tr id="line1"><td id="CI068" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI068</td><td id="CI210" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI210</td><td id="CI212" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI212</td><td id="CI215" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI215</td><td id="CI162" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI162</td><td id="CI163" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI163</td><td id="CI221" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI221</td><td id="OPT1" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line2"><td id="CI055" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI055</td><td id="CI056" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI056</td><td id="CI057" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI057</td><td id="CI062" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI062</td><td id="CI065" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI065</td><td id="CI165" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI165</td><td id="CI211" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI211</td><td id="OPT2" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line3"><td id="CI046" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM046</td><td id="CI067" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI067</td><td id="CI064" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI064</td><td id="CE003" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CE003</td><td id="CI059" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI059</td><td id="CI209" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI209</td><td id="OPT3" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT4" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line4"><td id="CI045" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM045</td><td id="CM005" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM005</td><td id="CI237" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI237</td><td id="CI058" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI058</td><td id="CI061" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI061</td><td id="CI218" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI218</td><td id="OPT5" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT6" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line5"><td id="CM201" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM201</td><td id="CM202" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM202</td><td id="CI166" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI166</td><td id="CI164" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI164</td><td id="SA214" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">SA214</td><td id="CI220" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI220</td><td id="TG1" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">TG I</td><td id="TG2" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">TG II</td></tr><tr><td colspan="3" bgcolor="#f5f5f5"><strong> * BLOCO A (Formação básica) </strong></td><colspan="5">&nbsp;</td></tr></table>');
 	}
 	else{
 		if (aluno.NUM_VERSAO == "1998") {
-			$('#grade').html('<table class="table_grade"><tr><td colspan="8" class="titulos_table">Ciência da Computação <br>Períodos semestrais do curso <br>Grade Curricular 2011</td></tr><tr><td class="titulos_table">1º</td><td class="titulos_table">2º</td><td class="titulos_table">3º</td><td class="titulos_table">4º</td><td class="titulos_table">5º</td><td class="titulos_table">6º</td><td class="titulos_table">7º</td><td class="titulos_table">8º</td></tr><tr id="line1"><td id="CI055" onclick="abreDetalhes(event)" class="codigo">CI055</td><td id="CI056" onclick="abreDetalhes(event)" class="codigo">CI056</td><td id="CI057" onclick="abreDetalhes(event)" class="codigo">CI066</td><td id="CI059" onclick="abreDetalhes(event)" class="codigo">CI215</td><td id="CI058" onclick="abreDetalhes(event)" class="codigo">CI162</td><td id="CI061" onclick="abreDetalhes(event)" class="codigo">CI061</td><td id="CI220" onclick="abreDetalhes(event)" class="codigo">CI221</td><td id="TG2" onclick="abreDetalhes(event)" class="codigo">TG2</td></tr><tr id="line2"><td id="CI063" onclick="abreDetalhes(event)" class="codigo">CI063</td><td id="CI067" onclick="abreDetalhes(event)" class="codigo">CI067</td><td id="CI064" onclick="abreDetalhes(event)" class="codigo">CI064</td><td id="CI060" onclick="abreDetalhes(event)" class="codigo">CI060</td><td id="CI062" onclick="abreDetalhes(event)" class="codigo">CI062</td><td id="CI214" onclick="abreDetalhes(event)" class="codigo">CI214</td><td id="CI221" onclick="abreDetalhes(event)" class="codigo">CI221</td><td id="OPT6" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line3"><td id="CI066" onclick="abreDetalhes(event)" class="codigo">CI066</td><td id="CI068" onclick="abreDetalhes(event)" class="codigo">CI068</td><td id="CI210" onclick="abreDetalhes(event)" class="codigo">CI210</td><td id="CI065" onclick="abreDetalhes(event)" class="codigo">CI065</td><td id="CI211" onclick="abreDetalhes(event)" class="codigo">CI211</td><td id="CI218" onclick="abreDetalhes(event)" class="codigo">CI218</td><td id="TG1" onclick="abreDetalhes(event)" class="codigo">TG1</td><td id="OPT7" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line4"><td id="CM045" onclick="abreDetalhes(event)" class="codigo">CM045</td><td id="CM005" onclick="abreDetalhes(event)" class="codigo">CM005</td><td id="CI237" onclick="abreDetalhes(event)" class="codigo">CI237</td><td id="CI069" onclick="abreDetalhes(event)" class="codigo">CI069</td><td id="CI215" onclick="abreDetalhes(event)" class="codigo">CI215</td><td id="CI236" onclick="abreDetalhes(event)" class="codigo">CI236</td><td id="OPT4" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT8" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line5"><td id="CM046" onclick="abreDetalhes(event)" class="codigo">CM046</td><td id="CM202" onclick="abreDetalhes(event)" class="codigo">CM202</td><td id="SA214" onclick="abreDetalhes(event)" class="codigo">SA214</td><td id="CI212" onclick="abreDetalhes(event)" class="codigo">CI212</td><td id="CI235" onclick="abreDetalhes(event)" class="codigo">CI235</td><td id="OPT2" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT5" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT9" onclick="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line6"><td id="CM201" onclick="abreDetalhes(event)" class="codigo">CM201</td><td id="CI202" onclick="abreDetalhes(event)" class="codigo">CI202</td><td id="CE003" onclick="abreDetalhes(event)" class="codigo">CE003</td><td id="CI219" onclick="abreDetalhes(event)" class="codigo">CI219</td><td id="SIN070" onclick="abreDetalhes(event)" class="codigo">SIN070</td><td id="OPT3" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="nada"></td><td id="nada"></td></tr><tr id="line7"><td id="nada"></td><td id="nada"></td><td id="nada"></td><td id="CM224" onclick="abreDetalhes(event)" class="codigo">CM224</td><td id="OPT1" onclick="abreDetalhes(event)" class="codigo">OPT</td><td id="nada"></td><td id="nada"></td><td id="nada"></td></tr></table>');
+			$('#grade').html('<table class="table_grade"><tr><td colspan="8" class="titulos_table">Ciência da Computação <br>Períodos semestrais do curso <br>Grade Curricular 2011</td></tr><tr><td class="titulos_table">1º</td><td class="titulos_table">2º</td><td class="titulos_table">3º</td><td class="titulos_table">4º</td><td class="titulos_table">5º</td><td class="titulos_table">6º</td><td class="titulos_table">7º</td><td class="titulos_table">8º</td></tr><tr id="line1"><td id="CI055" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI055</td><td id="CI056" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI056</td><td id="CI057" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI066</td><td id="CI059" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI215</td><td id="CI058" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI162</td><td id="CI061" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI061</td><td id="CI220" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI221</td><td id="TG2" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">TG2</td></tr><tr id="line2"><td id="CI063" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI063</td><td id="CI067" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI067</td><td id="CI064" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI064</td><td id="CI060" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI060</td><td id="CI062" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI062</td><td id="CI214" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI214</td><td id="CI221" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI221</td><td id="OPT6" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line3"><td id="CI066" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI066</td><td id="CI068" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI068</td><td id="CI210" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI210</td><td id="CI065" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI065</td><td id="CI211" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI211</td><td id="CI218" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI218</td><td id="TG1" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">TG1</td><td id="OPT7" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line4"><td id="CM045" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM045</td><td id="CM005" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM005</td><td id="CI237" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI237</td><td id="CI069" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI069</td><td id="CI215" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI215</td><td id="CI236" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI236</td><td id="OPT4" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT8" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line5"><td id="CM046" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM046</td><td id="CM202" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM202</td><td id="SA214" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">SA214</td><td id="CI212" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI212</td><td id="CI235" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI235</td><td id="OPT2" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT5" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="OPT9" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td></tr><tr id="line6"><td id="CM201" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM201</td><td id="CI202" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI202</td><td id="CE003" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CE003</td><td id="CI219" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CI219</td><td id="SIN070" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">SIN070</td><td id="OPT3" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="nada"></td><td id="nada"></td></tr><tr id="line7"><td id="nada"></td><td id="nada"></td><td id="nada"></td><td id="CM224" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">CM224</td><td id="OPT1" onclick="abreDetalhes(event)" oncontextmenu="abreDetalhes(event)" class="codigo">OPT</td><td id="nada"></td><td id="nada"></td><td id="nada"></td></tr></table>');
 		};
 	}
 	var disc = document.getElementsByClassName("codigo");
@@ -325,45 +325,117 @@ function atualizaDados() {
 	var grr = document.getElementById("grr").value;
 	var nomeAluno = document.getElementById("nomeAluno");
 	var raAluno = document.getElementById("grrAluno");
+	var c = document.getElementById("cAlu");
 	alunos = criaAlunos(alunos,registros);
 	aluno = procuraAluno(alunos,grr);
 	nomeAluno.innerHTML=aluno.NOME_ALUNO;
 	raAluno.innerHTML=aluno.MATR_ALUNO;
+	c.innerHTML=aluno.NOME_CURSO;
 	desenhaGrade(aluno);										//limpa grade curricular
 	procuraMaterias(aluno);
 }
 
-function mostraDetalheAprovacao(materiaAprovada,aluno) {
+function mostraDetalheAprovacao(matApr,aluno) {
 	//procura array da disciplina no historico do aluno
 	//caminha nas diversas disciplinas
 	for (var ds = aluno.disciplinas.length - 1; ds >= 0; ds--) {
 		ultima = aluno.disciplinas[ds][aluno.disciplinas[ds].length-1];
-		if (materiaAprovada == 'TG1'){
+		if (matApr == 'TG1'){
 			if (ultima.DESCR_ESTRUTURA == "Trabalho de Graduação I") {
-				mostraDetalhe(ultima);
+				materiaAprovada(ultima);
 				return;
 			};
 		};
-		if (materiaAprovada == 'TG2'){
+		if (matApr == 'TG2'){
 			if (ultima.DESCR_ESTRUTURA == "Trabalho de Graduação II") {
-				mostraDetalhe(ultima);
+				materiaAprovada(ultima);
 				return;
 			};
 		};
-		if (ultima.COD_ATIV_CURRIC == materiaAprovada){
-			mostraDetalhe(ultima);
+		if (ultima.COD_ATIV_CURRIC == matApr){
+			materiaAprovada(ultima);
 			return;
 		};
 	};
 }
 
-function mostraDetalheMateria() {
-
+function mostraDetalheMateria(codMateria,aluno) {
+	var tentativas = 1;
+	for (var ds = aluno.disciplinas.length - 1; ds >= 0; ds--) {
+		primeira = aluno.disciplinas[ds][0];
+		if (primeira.DESCR_ESTRUTURA == "Trabalho de Graduação I"){
+			if (codMateria == 'TG1'){
+				var str = "";
+				str += "<div class=\"DivWithScroll\">";
+				for (var i = 0; i <= aluno.disciplinas[ds].length - 1; i++) {
+					str += "<b>Tentativa</b> "+tentativas+":\n";
+					str += "<table>";
+					str += "<tr><td><b>Cursada no período/ano: </b></td><td>"+aluno.disciplinas[ds][i].PERIODO+"/"+aluno.disciplinas[ds][i].ANO+"</td>";
+					str += "<tr><td><b>Media final: </b></td><td>"+aluno.disciplinas[ds][i].MEDIA_FINAL+"</td>";
+					str += "<tr><td><b>Situação: </b></td><td>"+aluno.disciplinas[ds][i].SITUACAO+"</td>";
+					str += "<tr><td><b>Código Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].COD_ATIV_CURRIC+"</td>";
+					str += "<tr><td><b>Creditos: </b></td><td>"+aluno.disciplinas[ds][i].CREDITOS+"</td>";
+					str += "<tr><td><b>Carga Horária: </b></td><td>"+aluno.disciplinas[ds][i].CH_TOTAL+"</td>";
+					str += "<tr><td><b>Tipo Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].DESCR_ESTRUTURA+"</td>";
+					str += "<tr><td><b>Frequência: </b></td><td>"+aluno.disciplinas[ds][i].FREQUENCIA+"</td>";
+					str += "</table>\n";
+					tentativas++;
+				};
+				str += "</div>";
+				new Messi (str, {title: primeira.NOME_ATIV_CURRIC, titleClass: 'info'});
+				return;
+			};
+		};
+		if (primeira.DESCR_ESTRUTURA == "Trabalho de Graduação II") {
+			if (codMateria == 'TG2'){
+				var str = "";
+				str += "<div class=\"DivWithScroll\">";
+				for (var i = 0; i <= aluno.disciplinas[ds].length - 1; i++) {
+					str += "<b>Tentativa</b> "+tentativas+":\n";
+					str += "<table>";
+					str += "<tr><td><b>Cursada no período/ano: </b></td><td>"+aluno.disciplinas[ds][i].PERIODO+"/"+aluno.disciplinas[ds][i].ANO+"</td>";
+					str += "<tr><td><b>Media final: </b></td><td>"+aluno.disciplinas[ds][i].MEDIA_FINAL+"</td>";
+					str += "<tr><td><b>Situação: </b></td><td>"+aluno.disciplinas[ds][i].SITUACAO+"</td>";
+					str += "<tr><td><b>Código Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].COD_ATIV_CURRIC+"</td>";
+					str += "<tr><td><b>Creditos: </b></td><td>"+aluno.disciplinas[ds][i].CREDITOS+"</td>";
+					str += "<tr><td><b>Carga Horária: </b></td><td>"+aluno.disciplinas[ds][i].CH_TOTAL+"</td>";
+					str += "<tr><td><b>Tipo Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].DESCR_ESTRUTURA+"</td>";
+					str += "<tr><td><b>Frequência: </b></td><td>"+aluno.disciplinas[ds][i].FREQUENCIA+"</td>";
+					str += "</table>\n";
+					tentativas++;
+				};
+				str += "</div>";
+				new Messi (str, {title: primeira.NOME_ATIV_CURRIC, titleClass: 'info'});
+				return;
+			};
+		};
+		if (primeira.COD_ATIV_CURRIC == codMateria){
+			var str = "";
+			str += "<div class=\"DivWithScroll\">";
+			for (var i = 0; i <= aluno.disciplinas[ds].length - 1; i++) {
+				str += "<b>Tentativa</b> "+tentativas+":\n";
+				str += "<table>";
+				str += "<tr><td><b>Cursada no período/ano: </b></td><td>"+aluno.disciplinas[ds][i].PERIODO+"/"+aluno.disciplinas[ds][i].ANO+"</td>";
+				str += "<tr><td><b>Media final: </b></td><td>"+aluno.disciplinas[ds][i].MEDIA_FINAL+"</td>";
+				str += "<tr><td><b>Situação: </b></td><td>"+aluno.disciplinas[ds][i].SITUACAO+"</td>";
+				str += "<tr><td><b>Código Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].COD_ATIV_CURRIC+"</td>";
+				str += "<tr><td><b>Creditos: </b></td><td>"+aluno.disciplinas[ds][i].CREDITOS+"</td>";
+				str += "<tr><td><b>Carga Horária: </b></td><td>"+aluno.disciplinas[ds][i].CH_TOTAL+"</td>";
+				str += "<tr><td><b>Tipo Disciplina: </b></td><td>"+aluno.disciplinas[ds][i].DESCR_ESTRUTURA+"</td>";
+				str += "<tr><td><b>Frequência: </b></td><td>"+aluno.disciplinas[ds][i].FREQUENCIA+"</td>";
+				str += "</table>\n";
+				tentativas++;
+			};
+			str += "</div>";
+			new Messi (str, {title: primeira.NOME_ATIV_CURRIC, titleClass: 'info'});
+			return;
+		};
+	};
 }
 
-function mostraDetalhe(detalhes) {
+function materiaAprovada(detalhes) {
 	var str="<table>";
-	str += "<tr><td><b>Cursada no ano/período: </b></td><td>"+detalhes.ANO+"/"+detalhes.PERIODO+"</td>";
+	str += "<tr><td><b>Última vez cursada (período/ano): </b></td><td>"+detalhes.PERIODO+"/"+detalhes.ANO+"</td>";
 	str += "<tr><td><b>Media final: </b></td><td>"+detalhes.MEDIA_FINAL+"</td>";
 	str += "<tr><td><b>Situação: </b></td><td>"+detalhes.SITUACAO+"</td>";
 	str += "<tr><td><b>Código Disciplina: </b></td><td>"+detalhes.COD_ATIV_CURRIC+"</td>";
@@ -373,12 +445,6 @@ function mostraDetalhe(detalhes) {
 	str += "<tr><td><b>Frequência: </b></td><td>"+detalhes.FREQUENCIA+"</td>";
 	str += "</table>\n";
 	new Messi (str, {title: detalhes.NOME_ATIV_CURRIC, titleClass: 'info'});
-	//$(detalhes).modal();
-	//new Messi('<html><head> <title>Trabalho 4</title><meta charset="utf-8"><script src="jquery-2.0.0.js"></script><script type="text/javascript" src="Script.js"> </script><link rel="stylesheet" href="messi.min.css" /><script src="messi.js"></script></head><body onload="alteraInformacoesPagina()"><table id="detalheAprovacao"><tr><td>Ano cursado:</td><td id="anoC">-</td></tr><tr><td>Período: </td><td id="periodo">-</td></tr><tr><td>Media final: </td><td id="mediaFinal">-</td></tr><tr><td>Situação: </td><td id="situ">-</td></tr><tr><td>Código da Disciplina: </td><td id="codDisciplina">-</td></tr><tr><td>Nome da Disciplina: </td><td id="nomeDisciplina">-</td></tr><tr><td>Creditos: </td><td id="creditos">-</td></tr><tr><td>Carga Horária: </td><td id="cargaHoraria">-</td></tr><tr><td>Tipo disciplina: </td><td id="tipo">-</td></tr><tr><td>Frequência: </td><td id="freq">\freq</td></tr></table></body></html>', {modal: true, buttons: [{id: 0, label: 'Close', val: 'X'}]});
-	//var a = Messi.document.getElementById("anoC");
-	//var teste = document.getElementById("nomeAluno");
-	//var janela=window.open('MateriaAprovada.html','name','height=300,width=300');
-	//imprimeDetalhes(janela, detalhes);
 }
 
 
@@ -394,9 +460,8 @@ function abreDetalhes(event) {
 		case 1:				//left button	
 			mostraDetalheAprovacao(event.currentTarget.innerHTML,aluno);
 		break;
-		case 2:				//right button
-			alert("direito ahuahua");
-			mostraDetalheMateria();
+		case 3:				//right button
+			mostraDetalheMateria(event.currentTarget.innerHTML, aluno);
 		break;
 	}
 }
