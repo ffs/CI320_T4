@@ -7,49 +7,50 @@
 		<link rel="stylesheet" href="messi.min.css" />
 		<script src="messi.js"></script>
 		<script>
-			document.oncontextmenu=new Function ("return false") ;
+
 		</script>
 	</head>
 	<body onload="inicializa()">
-		<header> 
-			<form>
-				Registro Acadêmico: 
-				<input id="grr" type="text" name="grraluno">
-				<button type="button" onclick="atualizaDados()">Procurar Aluno</button>
-			</form>
+		<header>
+			<div id="headerDiv">
+				<form>
+					Registro Acadêmico: 
+					<input id="grr" type="text" name="grraluno">
+					<button type="button" onclick="atualizaDados()">Procurar Aluno</button>
+				</form>
+			</div>
 		</header>
 		<article>
-			
-			<h1> Informações do Aluno </h1>
-			<table id="infoAluno">
-				<tr>
-					<td>
-						<b>Nome:</b> 
-					</td>
-					<td id="nomeAluno">
-						Nenhum GRR selecionado!
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Registro Acadêmico:</b> 
-					</td>
-					<td id="grrAluno">
-						Nenhum GRR selecionado!
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<b>Curso:</b>
-					</td>
-					<td id="cAlu">
-						Nenhum GRR selecionado!
-					</td>
-				</tr>
-			</table>
-
+			<div id="InfoAluno">
+				<h1> Informações do Aluno </h1>
+				<table align="center">
+					<tr>
+						<td class="borda">
+							<b>Nome:</b> 
+						</td>
+						<td id="nomeAluno" class="info">
+							Nenhum GRR selecionado!
+						</td>
+					</tr>
+					<tr>
+						<td class="borda">
+							<b>Registro Acadêmico:</b> 
+						</td>
+						<td id="grrAluno" class="info">
+							Nenhum GRR selecionado!
+						</td>
+					</tr>
+					<tr>
+						<td class="borda">
+							<b>Curso:</b>
+						</td>
+						<td id="cAlu" class="info">
+							Nenhum GRR selecionado!
+						</td>
+					</tr>
+				</table>
+			</div>
 			<div id="grade">
-				Insira um GRR
 			</div>
 			<div id="legenda">
 				<h1> Legenda </h1>
