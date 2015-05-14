@@ -12,18 +12,25 @@
 	</head>
 	<body onload="inicializa()">
 		<header>
-			<div id="headerDiv">
-				<form>
+			<table id="headerDiv" align="center">
+			<h1 align="center"> Visualizeitor </h1>
+				<tr>
+					<td>
 					Registro Acadêmico: 
-					<input id="grr" type="text" name="grraluno">
-					<button type="button" onclick="atualizaDados()">Procurar Aluno</button>
-				</form>
-			</div>
+					</td>
+					<td>
+						<form>
+							<input id="grr" type="text" name="grraluno">
+							<button type="button" onclick="atualizaDados()">Procurar Aluno</button>
+						</form>
+					</td>
+				</tr>
+			</table>
 		</header>
 		<article>
 			<div id="InfoAluno">
-				<h1> Informações do Aluno </h1>
-				<table align="center">
+				<h2> Informações do Aluno </h2>
+				<table id="tabelaAluno" align="center">
 					<tr>
 						<td class="borda">
 							<b>Nome:</b> 

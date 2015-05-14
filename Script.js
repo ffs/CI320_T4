@@ -6,7 +6,7 @@ var auxiliar = ["GRR00000000","GRR00000001","GRR00000002","GRR00000003","GRR0000
 
 var estadoDisciplinas = ["Aprovado","Reprovado","Equivale","Matricula","Repr. Freq","Cancelado","Tr. Total","Disp. c/nt"];
 var corEstados = ["verde","vermelhoclaro","amarelo","azul","vermelhoescuro","roxo","cinza","marrom"];
-var hexaCor = ["#00FF00","#FF9999","#FFFF00","#0066FF","#FF0000","#990099","#B2B2B2","#996633"];
+var hexaCor = ["#99FF99","#FFB2B2","#FFFF00","#0066FF","#FF3333","#990099","#B2B2B2","#996633"];
 var numOpts = ["OPT1","OPT2","OPT3","OPT4","OPT5","OPT6","OPT7","OPT8","OPT9"];
 var opts = 0;
 
