@@ -308,6 +308,7 @@ a.codigo:hover, active {color:#215900;text-decoration:underline}
 .info {
   text-align: left;
   border: 1px solid gray;
+  width: 600px;
 }
 
 #headerDiv {
@@ -318,14 +319,66 @@ a.codigo:hover, active {color:#215900;text-decoration:underline}
   text-align:center;
 }
 
+#tableLegendaAprovado {
+  background-color:#99FF99;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaRepNota {
+  background-color:#FFB2B2;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaEqui {
+  background-color:#FFFF00;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaMat {
+  background-color:#0066FF;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaRepFreq {
+  background-color:#FF3333;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaCanc {
+  background-color:#990099;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaDisp {
+  background-color:#996633;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegendaTran {
+  background-color:#B2B2B2;
+  width: 10px;
+  height: 10px;
+}
+
+#tableLegenda {
+  height: 100%;
+}
+
 #infoAluno {
    float:center;
    text-align:center;
+
 }
 
 #tabelaAluno {
   font-size: 20px;
-  padding-bottom: 20px;
 }
 
 #grade{
