@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Visualizeitor</title>
+  <script src="jquery-2.0.0.js"> </script>
+  <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <script type="text/javascript" src="Script.js"></script>
+  
+  <link rel="stylesheet" href="messi.min.css" />
+  <script src="messi.js"></script>
+  <script>
+    document.oncontextmenu=new Function ("return false");
+    document.addEventListener("touchstart", function(){}, true);
+  </script>
+</head>
+
+<body onload="inicializa()">
+  <div id="topbar"><a href="http://www.ufpr.br">Universidade Federal do Paraná</a></div>
+  <div id="w">
+    <div id="content">
+
+    <h1 id="tituloTrab"><span>Visualizeitor</span></h1>
+    
+   <form id="searchform2" name="searchform2" method="get" action="index.html" >
+      <div class="fieldcontainer"> 
+      <center>
+        <input type="text" name="s2" id="s2" class="searchfieldjs" placeholder="Insira um GRR..." tabindex="2">
+        <input type="submit" name="search2btn" id="search2btn" value="" onclick="atualizaDados()">
+      </center>
+      </div>
+    </form>
+    
+    <br><br>
+    <h1 id="titulo2"><span> Informações do Aluno </span></h1>
+    <div id="InfoAluno" align="center">
+        <table id="tabelaAluno">
+          <tr>
+            <td class="borda">
+              <b>Nome:</b> 
+            </td>
+            <td id="nomeAluno" class="info">
+              Nenhum GRR selecionado!
+            </td>
+          </tr>
+          <tr>
+            <td class="borda">
+              <b>Registro Acadêmico:</b> 
+            </td>
+            <td id="grrAluno" class="info">
+              Nenhum GRR selecionado!
+            </td>
+          </tr>
+          <tr>
+            <td class="borda">
+              <b>Curso:</b>
+            </td>
+            <td id="cAlu" class="info">
+              Nenhum GRR selecionado!
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h1><span> Grade Curricular </span></h1>
+      <div id="grade" align="center">
+      </div>
+      <div id="legenda">
+        <h1><span> Legenda </span></h1>
+        Verde = Aprovado | Vermelho claro = Reprovado por nota | Amarelo = Equivalencia | Azul = Matricula | Vermelho escuro = Reprovado por frequencia | Roxo = Cancelado | Cinza = Trancamento total | Marrom = Dispensa com nota
+      </div>
+
+    </div><!-- @end #content -->
+  </div><!-- @end #w -->
+</body>
+</html>
