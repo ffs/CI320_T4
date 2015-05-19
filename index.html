@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Visualizeitor</title>
   <script src="jquery-2.0.0.js"> </script>
-  <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <link rel="stylesheet" type="text/css" media="all" href="Estilos.css">
   <script type="text/javascript" src="Script.js"></script>
   
   <link rel="stylesheet" href="messi.min.css" />
@@ -16,40 +16,45 @@
 </head>
 
 <body onload="inicializa()">
-  <div id="topbar"><a href="http://www.ufpr.br">Universidade Federal do Paraná</a></div>
+  <div id="topbar"><a href="http://www.inf.ufpr.br/bcc">Bacharelado em Ciência da Computação</a></div>
   <div id="w">
     <div id="content">
 
-    <h1 id="tituloTrab"><span>Visualizeitor</span></h1>
-    
-   <form id="searchform2" name="searchform2" method="get" action="index.html" >
+    <h1 id="tituloTrabalho"><span>Visualizeitor</span></h1>
+
+
+    <!-- INICIO CAMPO DE PESQUISA -->
+    <form id="searchform2" name="searchform2" method="get" action="index.html" >
       <div class="fieldcontainer"> 
-      <center>
-        <input type="text" name="s2" id="s2" class="searchfieldjs" placeholder="Insira um GRR..." tabindex="2">
-        <input type="submit" name="search2btn" id="search2btn" value="" onclick="atualizaDados()">
-      </center>
+        <center>
+          <input type="text" name="s2" id="s2" class="searchfieldjs" placeholder="Insira um GRR..." tabindex="2">
+          <input type="submit" name="search2btn" id="search2btn" value="" onclick="atualizaDadosPagina()">
+        </center>
       </div>
     </form>
     
-    <br><br>
-    <h1 id="titulo2"><span> Informações do Aluno </span></h1>
+    <!-- FIM CAMPO DE PESQUISA -->
+
+
+    <!-- INICIO INFORMAÇÕES DO ALUNO -->
+    <h1 id="tituloInfoAluno"><span> Informações do Aluno </span></h1>
     <div id="InfoAluno" align="center">
-        <table id="tabelaAluno">
-          <tr>
+        <table id="tabelaInfoAluno">
+          <tr id="linhaAluno">
             <td class="borda">
               <b>Nome:</b> 
             </td>
             <td id="nomeAluno" class="info">
             </td>
           </tr>
-          <tr>
+          <tr id="linhaAluno">
             <td class="borda">
               <b>Registro Acadêmico:</b> 
             </td>
             <td id="grrAluno" class="info">
             </td>
           </tr>
-          <tr>
+          <tr id="linhaAluno">
             <td class="borda">
               <b>Curso:</b>
             </td>
@@ -58,29 +63,36 @@
           </tr>
         </table>
       </div>
-      <h1><span> Grade Curricular </span></h1>
+      <!-- FIM INFORMAÇÕES DO ALUNO -->
+      
+
+      <!-- INICIO GRADE CURRICULAR -->
+      <h1 id="tituloGrade"><span> Grade Curricular </span></h1>
       <div id="grade" align="center">
       </div>
-      
-      <div id="legenda">
-      
-        <h1><span> Legenda </span></h1>
-        
-        <table id="tableLegenda">
-          <tr>
-            <td id="tableLegendaAprovado"></td><td>Aprovado</td>
-            <td id="tableLegendaRepNota"></td><td>Reprovado por nota</td>
-            <td id="tableLegendaEqui"></td><td>Equivalencia</td>
-            <td id="tableLegendaMat"></td><td>Matricula</td>
-            <td id="tableLegendaRepFreq"></td><td>Reprovado por frequencia</td>
-            <td id="tableLegendaCanc"></td><td>Cancelado</td>
-            <td id="tableLegendaDisp"></td><td>Dispensa com nota</td></tr>
-            <td id="tableLegendaTran"></td><td>Trancamento</td></tr>
-          </tr>
+      <!-- FIM GRADE CURRICULAR -->
 
-        </table>
 
-      </div>
+      <!-- INÍCIO LEGENDA -->
+      <center>
+      <h1 id="tituloLegenda"><span> Legenda </span></h1>
+      <table width="50%" id="tabelaLegenda">
+        <tr>
+          <td id="legendaAprovado" width="10px" height="10px"><div></div></td><td>Aprovado</td>
+          <td id="legendaRepNota" width="10px" height="10px"><div></div></td><td>Reprovado por nota</td>
+          <td id="legendaEqui" width="10px" height="10px"><div></div></td><td>Equivalencia</td>
+          <td id="legendaMat" width="10px" height="10px"><div></div></td><td>Matricula</td>
+        </tr>
+        <tr>
+          <td id="legendaRepFreq" width="10px" height="10px"><div></div></td><td>Reprovado por frequencia</td>
+          <td id="legendaCanc" width="10px" height="10px"><div></div></td><td>Cancelado</td>
+          <td id="legendaDisp" width="10px" height="10px"><div></div></td><td>Dispensa com nota</td>
+          <td id="legendaTran" width="10px" height="10px"><div></div></td><td>Trancamento</td>
+        </tr>
+      </table>
+      </center>
+      <!-- FIM LEGENDA -->
+
 
     </div><!-- @end #content -->
   </div><!-- @end #w -->

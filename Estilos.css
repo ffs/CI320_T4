@@ -1,0 +1,395 @@
+/*  FELLIPE FREITAS DA SILVEIRA  */
+/*  BACHAREL EM CIÊNCIA DA COMPUTAÇÃO  */
+/*  TRABALHO DE CI320 UFPR 2015/1  */
+
+
+
+/*------- INICIO ESTRUTURA PAGINA --------*/
+
+html, body, div, h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { 
+  height: 100%; 
+}
+
+body { 
+  background: #f0f0f0 url('images/bg.gif'); 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #313131;
+  font-size: 62.5%; 
+  line-height: 1; 
+}
+
+#w {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#content {
+  display: block;
+  width: 100%;
+  background: #fff;
+  padding: 25px 20px;
+  padding-bottom: 35px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 2px 0px;
+
+}
+
+/*--------- FIM ESTRUTURA PAGINA ---------*/
+
+
+
+/*------------ INICIO TITULOS ------------*/
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  letter-spacing: -0.05em;
+  margin-bottom: 20px;
+  padding: .1em 0;
+  color: #444;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+h1:before,h1:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  vertical-align: middle;
+  background: #CCCCCC;
+}
+
+h1:before {
+  left: -.5em;
+  margin: 0 0 0 -50%;
+}
+
+h1:after {    
+  left: .5em;
+  margin: 0 -50% 0 0;
+}
+
+h1 > span {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+}
+
+#tituloTrabalho {
+  font-family:Trebuchet MS, Verdana, Arial, Sans-serif;
+  font-size:74px; color:#000020; font-weight:normal;
+}
+
+#tituloGrade {
+  font-family:Trebuchet MS, Verdana, Arial, Sans-serif;
+}
+
+#tituloInfoAluno {
+  font-family:Trebuchet MS, Verdana, Arial, Sans-serif;
+}
+
+#tituloLegenda {
+  font-family:Trebuchet MS, Verdana, Arial, Sans-serif;
+}
+
+/*-------------- FIM TITULOS -------------*/
+
+
+
+/*------------ INICIO TOP BAR ------------*/
+
+#topbar {
+  background-image: url('images/top.gif');
+  padding: 10px 0 10px 0;
+  text-align: center;
+}
+
+#topbar a {
+  color: #fff;
+  font-size:1.3em;
+  line-height: 1.25em;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+#topbar a:hover {
+  opacity: 1;
+}
+
+/*-------------- FIM TOP BAR -------------*/
+
+
+
+/*-------- INICIO CAMPO PESQUISA ---------*/
+
+#search2btn:hover, #search2btn:focus {
+  filter: alpha(opacity=90);
+  opacity: 0.9;  
+}
+
+.searchfieldjs:focus {
+  color: #666;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #e0e0e0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #e0e0e0;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.2), 0 0 0 6px #e0e0e0;
+}
+
+/** JS animated input **/
+.searchfieldjs {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 45%;
+  padding: 11px 7px;
+  padding-right: 43px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  color: #ccc;
+  font-size: 1.6em;
+  border-bottom-color: #d2e2e7;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 0 6px #f0f0f0;
+}
+
+#search2btn {
+  position: absolute;
+  right: 28%;
+  top: 5px;
+  height: 32px;
+  width: 32px;
+  border: 0;
+  cursor: pointer;
+  zoom: 1;
+  filter: alpha(opacity=65);
+  opacity: 0.65;
+  background: transparent url('images/search.png') top left no-repeat;
+  /* Icon credits to Brightmix http://www.iconfinder.com/icondetails/43272/128/find_loop_magnify_monotone_search_zoom_icon */
+}
+
+#searchform2 {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.fieldcontainer {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/*---------- FIM CAMPO PESQUISA ----------*/
+
+
+
+/*------INICIO INFORMAÇÕES DO ALUNO ------*/
+
+#tabelaInfoAluno {
+  font-size: 20px;
+  border-radius: 3px;
+  width: 60%;
+  position: relative; /*needed for heading4 rule*/
+  z-index: 0; /* again, just for heading4 rule*/    
+  border: 7px solid #cecece;
+  border: 7px solid rgba(0,0,0,.05);
+  background: #fff;
+  background-clip: padding-box;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+#linhaAluno {
+  border: 1px solid black;
+}
+
+#infoAluno {
+   float:center;
+   text-align:center;
+}
+
+.info {
+  text-align: left;
+  width: 600px;
+}
+
+/*------- FIM INFORMAÇÕES DO ALUNO -------*/
+
+
+
+/*-------- INICIO GRADE CURRICULAR -------*/
+
+h1#tituloGrade {
+  margin-top: 30px;
+}
+
+#tabelaGrade {
+  font-family:Trebuchet MS, Verdana, Arial, Sans-serif;
+  font-size:12px; color:#000020; font-weight:normal;
+  table-layout: fixed;
+  height: 100%;
+}
+
+.codigo {
+  text-align: center;
+  width:50px;
+  height:30px;
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  color:black;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  text-decoration:none;
+  cursor:pointer;
+  padding:17px;
+  border:3px solid gray;
+}
+
+.titulos_table {
+  border:3px solid gray;
+  background-color:#FFFFB8;
+  text-align:center;
+  vertical-align:center;
+  font-weight:bolder;
+  color:#000020;
+  font-size: 20px;
+}
+
+.codigo:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
+  background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
+  background-color:#e9e9e9;
+}
+
+.codigo:active {
+  position:relative;
+  top:1px;
+}
+
+a.codigo:link {color:#215900; text-decoration:bold}
+a.codigo:visited {color:#215900; text-decoration:none}
+a.codigo:hover, active {color:#215900;text-decoration:underline}
+
+.naoCodigo {
+  padding: 15px;
+}
+
+/*--------- FIM GRADE CURRICULAR ---------*/
+
+
+
+/*------------ INICIO LEGENDA ------------*/
+
+#tabelaLegenda {
+}
+
+td#legendaAprovado {
+  background-color:#99FF99;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaRepNota {
+  background-color:#FFB2B2;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaEqui {
+  background-color:#FFFF00;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaMat {
+  background-color:#0066FF;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaRepFreq {
+  background-color:#FF3333;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaCanc {
+  background-color:#990099;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaDisp {
+  background-color:#996633;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+td#legendaTran {  
+  background-color:#B2B2B2;
+  min-width: 10px;
+  min-height: 10px;
+  max-width: 10px;
+  max-height: 10px;
+}
+
+/*-------------  FIM LEGENDA -------------*/
+
+
+/*------ INICIO DETALHES DISCIPLINA ------*/
+
+.DivWithScroll {
+    height:500px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+/*-------- FIM DETALHES DISCIPLINA -------*/
+
